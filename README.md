@@ -1,4 +1,4 @@
-# Docker ready Play2 build
+## Docker ready Play 2 Application build
 
 ```
 sbt docker:publishLocal
