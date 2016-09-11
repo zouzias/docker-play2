@@ -22,7 +22,7 @@ maintainer := "Anastasios Zouzias"
 // exposing the play ports
 dockerExposedPorts in Docker := Seq(9000, 9443)
 
-// run this with: docker run -p 9000:9000 play-2-3:1.0-SNAPSHOT
+// run this with: docker run -p 9000:9000 zouzias/play-2-5:0.1.0-SNAPSHOT
 ```
 
 # Acknownledgements

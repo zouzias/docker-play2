@@ -29,6 +29,9 @@ libraryDependencies ++= {
 // setting a maintainer which is used for all packaging types
 maintainer := "Anastasios Zouzias"
 
+dockerRepository := Some("zouzias")
+version in Docker := version.value
+
 // exposing the play ports
 dockerExposedPorts in Docker := Seq(9000, 9443)
 
