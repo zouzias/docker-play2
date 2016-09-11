@@ -1,5 +1,6 @@
 ## Docker ready Play 2 Application build
 
+Clone the project, install SBT, setup Docker and type
 ```
 sbt docker:publishLocal
 docker run -p 9000:9000 zouzias/play-2-5:0.1.0-SNAPSHOT
