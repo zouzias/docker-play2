@@ -13,4 +13,4 @@ The docker host ip can be found using `docker-machine ip default` (replace defau
 
 ### Acknowledgements
 
-This project is based on (https://github.com/muuki88/sbt-native-packager-examples/tree/master/play-2.3)[sbt-native-packager-examples]
+This project is based on [https://github.com/muuki88/sbt-native-packager-examples/tree/master/play-2.3](sbt-native-packager-examples)
