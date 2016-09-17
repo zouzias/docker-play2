@@ -13,7 +13,7 @@ You can test the API on your browseer `http://DOCKER_HOST_IP:9000/ping`, you sho
 The docker host ip can be found using `docker-machine ip default` (replace default with the name of the docker host).
 
 
-## Enumerator Example
+## Enumerator Examples
 
 * Enumerator.apply: `curl -N http://DOCKER_HOST_IP:9000/enum`
 * Enumerator.generateM: `curl -N http://DOCKER_HOST_IP:9000/generateM`
