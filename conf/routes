@@ -4,6 +4,11 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /enum                       controllers.Application.enum
+GET     /generateM                  controllers.Application.generateM
+GET     /repeatM                    controllers.Application.repeatM
+GET     /interleave                 controllers.Application.interleave
+GET     /andThen                    controllers.Application.andThen
 GET     /ping                       controllers.HealthCheck.ping
 
 # Map static resources from the /public folder to the /assets URL path

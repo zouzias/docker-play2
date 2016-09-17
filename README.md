@@ -12,6 +12,15 @@ You can test the API on your browseer `http://DOCKER_HOST_IP:9000/ping`, you sho
 
 The docker host ip can be found using `docker-machine ip default` (replace default with the name of the docker host).
 
+
+## Enumerator Example
+
+* Enumerator.apply: `curl -N http://DOCKER_HOST_IP:9000/enum`
+* Enumerator.generateM: `curl -N http://DOCKER_HOST_IP:9000/generateM`
+* Enumerator.repeatM: `curl -N http://DOCKER_HOST_IP:9000/repeatM`
+* Enumerator.interleave: `curl -N http://DOCKER_HOST_IP:9000/interleave`
+* Enumerator.andThen: `curl -N http://DOCKER_HOST_IP:9000/andThen`
+
 ### Acknowledgements
 
 This project is based on [https://github.com/muuki88/sbt-native-packager-examples/tree/master/play-2.3](sbt-native-packager-examples)
