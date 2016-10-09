@@ -3,7 +3,7 @@
 Clone the project, install SBT, setup Docker and type
 ```
 sbt docker:publishLocal
-docker run -p 9000:9000 zouzias/play-2-5:0.1.0-SNAPSHOT
+docker run -p 9000:9000 zouzias/play-2-4:0.1.0-SNAPSHOT
 ```
 
 and you have a running docker container in play. Almost no configuration needed.
@@ -20,6 +20,8 @@ The docker host ip can be found using `docker-machine ip default` (replace defau
 * Enumerator.repeatM: `curl -N http://DOCKER_HOST_IP:9000/repeatM`
 * Enumerator.interleave: `curl -N http://DOCKER_HOST_IP:9000/interleave`
 * Enumerator.andThen: `curl -N http://DOCKER_HOST_IP:9000/andThen`
+
+Go to `http://DOCKER_HOST_IP:9000/docs/swagger-ui/index.html?url=/assets/swagger.json#!/routes/get_ping``
 
 ### Acknowledgements
 

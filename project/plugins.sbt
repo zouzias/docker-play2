@@ -2,6 +2,9 @@ resolvers ++= Seq("Typesafe repository" at "http://repo.typesafe.com/typesafe/re
                   "scalaz-bintray"                  at "http://dl.bintray.com/scalaz/releases"
 )
 
+// Swagger integration
+addSbtPlugin("com.iheart" % "sbt-play-swagger" % "0.5.3-PLAY2.4")
+
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.4.8")
 

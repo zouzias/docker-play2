@@ -1,15 +1,14 @@
-name := "play-2.5"
+name := "play-2.4"
 version := "0.1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala, SwaggerPlugin)
 
 scalaVersion := "2.11.8"
 scalacOptions := Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 
 libraryDependencies ++= {
-  val nscalatimeVersion = "2.6.0"
   val playstreamsVersion = "2.4.8"
-  val akkaVersion = "2.4.10"
+  val akkaVersion = "2.4.11"
 
   Seq(
     jdbc,
@@ -17,14 +16,17 @@ libraryDependencies ++= {
     ws exclude("commons-logging", "commons-logging"),
     filters,
     "org.specs2" %% "specs2-core" % "3.8.5" % "test",
-    "com.github.nscala-time" %% "nscala-time" % nscalatimeVersion,
     "com.typesafe.play" %% "play-streams-experimental" % playstreamsVersion,
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
     "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
     "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
-    "org.julienrf" %% "play-json-variants" % "1.1.0"
+    "org.julienrf" %% "play-json-variants" % "1.1.0",
+    "org.webjars" % "swagger-ui" % "2.2.5"
   )
 }
+
+swaggerDomainNameSpaces := Seq("models")
+
 
 // setting a maintainer which is used for all packaging types
 maintainer := "Anastasios Zouzias"

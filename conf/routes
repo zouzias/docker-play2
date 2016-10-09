@@ -2,14 +2,69 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET     /                           controllers.Application.index
+### NoDocs ###
+GET   /docs/swagger-ui/*file        controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
+
+### NoDocs ###
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+###
+#  summary: Enumerators enum Example
+#  responses:
+#    200:
+#      description: success
+###
 GET     /enum                       controllers.Application.enum
+
+###
+#  summary: Enumerators generateM Example
+#  responses:
+#    200:
+#      description: success
+###
 GET     /generateM                  controllers.Application.generateM
+
+
+###
+#  summary: Enumerators repeatM Example
+#  responses:
+#    200:
+#      description: success
+###
 GET     /repeatM                    controllers.Application.repeatM
+
+###
+#  summary: Enumerators andThen Example
+#  responses:
+#    200:
+#      description: success
+###
 GET     /interleave                 controllers.Application.interleave
+
+###
+#  summary: Enumerators andThen Example
+#  responses:
+#    200:
+#      description: success
+###
 GET     /andThen                    controllers.Application.andThen
+
+###
+#  summary: Health Check
+#  description: Simple health check
+#  responses:
+#    200:
+#      description: success
+###
 GET     /ping                       controllers.HealthCheck.ping
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+###
+#  summary: Home page
+#  responses:
+#    200:
+#      description: success
+###
+GET     /                           controllers.Application.index
+
+
