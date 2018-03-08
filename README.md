@@ -21,7 +21,7 @@ The docker host ip can be found using `docker-machine ip default` (replace defau
 * Enumerator.interleave: `curl -N http://DOCKER_HOST_IP:9000/interleave`
 * Enumerator.andThen: `curl -N http://DOCKER_HOST_IP:9000/andThen`
 
-Go to `http://DOCKER_HOST_IP:9000/docs/swagger-ui/index.html?url=/assets/swagger.json#!/routes/get_ping``
+Go to `http://DOCKER_HOST_IP:9000/docs/swagger-ui/index.html?url=/assets/swagger.json#!/routes/get_ping`
 
 ### Acknowledgements
 
